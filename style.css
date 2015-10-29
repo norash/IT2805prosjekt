@@ -1,0 +1,48 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+ 
+#container
+ {
+ 	min-height: 100%;
+ 	position: relative;
+ 	
+	background-color: #E9E0DB;
+ }
+ 
+ section {
+ 	padding: 10px;
+ 	padding-bottom: 20px;
+ 	
+ 	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+ }
+ 
+ img {
+	width: 300px;
+	border: 1px solid  #453823;
+	float: right;
+	clear: right;
+	margin: 15px;
+}
+
+ footer {
+ 	position: absolute;
+ 	bottom: 0;
+ 	width: 100%;
+ 	height: 20px;
+ 	
+ 	text-align: center;
+ 	
+	clear: both;
+	font-family: Georgia, Tahoma, sans-serif;
+	font-style: italic;
+	font-size: 14px;
+	background-color: #C9A798;
+	border-top: 2px solid #453823;
+	padding-top: 2px;
+ }
+
