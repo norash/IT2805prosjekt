@@ -68,3 +68,41 @@ html, body {
 
 }
 
+/* Kontakt oss skjema */
+ form > input, form > textarea {
+	border-radius: 10px;
+	border: 2px solid #453823;
+	background-color: #E9E0DB;
+	padding: 5px;
+	margin: 5px;
+	width: 300px;
+	font-family: "Century Gothic";
+	font-size: 14px;
+ }
+ 
+
+ #postnr {
+	width: 90px;
+	margin-right: 0px;
+ }
+ 
+ #gate {
+	width: 193px;
+	margin-left: 0px;
+ }
+ 
+ #send {
+	width: 80px;
+	font-weight: bold;
+ }
+
+ form > label, form > p{
+	text-align: left;
+	display: inline-block;
+	width: 140px;
+	font-size: 16px;
+	vertical-align: top;
+	padding-top: 10px;
+ }
+ /* Slutten på kontakt oss skjema */
+
