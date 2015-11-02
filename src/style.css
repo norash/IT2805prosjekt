@@ -17,7 +17,7 @@ html, body {
  	padding-bottom: 20px;
  	
  	width: 80%;
-	margin-left: auto;
+	margin-left: 150px;
 	margin-right: auto;
  }
  
@@ -27,6 +27,10 @@ html, body {
 	float: right;
 	clear: right;
 	margin: 15px;
+}
+#kurs a{
+	text-decoration: none;
+	padding: 20px 20px 20px 30px;
 }
 
  footer {
@@ -48,9 +52,7 @@ html, body {
  header{
 	padding: 20px;
 	background-image: url(img/wood-texture.jpg);
-	
 	height: 100px;
-
  }
  h1{
 	display: inline;
@@ -58,16 +60,51 @@ html, body {
 	font-family: chalkduster, sans-serif;
 	color: #E9E0DB;
 	padding: 50px;
+	font-size: 48pt;
 
 }
 #logo{
 	position: static;
-	size: 200px 100px;
-	float: right;
-	padding-right: 20px;
+	float: left;
+	bottom: 20px;
+	margin: none;
+	border: none;
 
 }
+#sidebar li{
+	list-style-type: none;
+	padding: 5px;
 
+<<<<<<< HEAD
+}
+#sidebar a{
+	text-decoration: none;
+	color: black;
+	padding: 5px;
+}
+#sidebar ul{
+	padding: 0px;
+	margin: 0px;
+}
+#sidebar{
+	position: fixed;
+	float: left;
+	background-color: #C9A798;
+	border: solid #453823 2px;
+	border-left: none;
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	top: 200px;
+	left: 0px;
+}
+#sidebar hr{
+	color: red;
+	margin: none;
+}
+.Elem{
+	border-bottom: solid #453823 2px;
+}
+=======
 /* Kontakt oss skjema */
  form > input, form > textarea {
 	border-radius: 10px;
@@ -106,3 +143,4 @@ html, body {
  }
  /* Slutten på kontakt oss skjema */
 
+>>>>>>> origin/master
