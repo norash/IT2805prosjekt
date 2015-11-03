@@ -11,6 +11,9 @@ html, body {
  	
 	background-color: #E9E0DB;
  }
+ p{
+ 	font-family: Century Gothic, Tahoma, sans-serif;
+ }
  
  section {
  	padding: 10px;
@@ -28,9 +31,37 @@ html, body {
 	clear: right;
 	margin: 15px;
 }
+/* Navigasjon*/
+nav{
+	background-color: #C9A798;
+	background: linear-gradient(#A37547, #B5916C);
+	border-top: solid #453823 2px;
+	border-bottom: solid #453823 2px;
+}
+nav ul{
+	list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+    height: 20px;
+}
+nav li{
+	display: inline;
+	font-family: georgia, serif;
+	color: #262626;
+	text-transform: uppercase;
+	width: 25%;
+	text-align: center;
+	font-weight: bold;
+	padding: 8px 60px 8px 60px;
+}
+/* Slutten på navigasjon*/
+
+
 #kurs a{
 	text-decoration: none;
 	padding: 20px 20px 20px 30px;
+	font-family: Century Gothic, Tahoma, sans-serif;
 }
 
  footer {
@@ -66,16 +97,16 @@ html, body {
 #logo{
 	position: static;
 	float: left;
-	bottom: 20px;
+	bottom: 30px;
 	margin: none;
 	border: none;
+	height: 100%;
+	width: 7%;
 
 }
 #sidebar li{
 	list-style-type: none;
 	padding: 5px;
-
-<<<<<<< HEAD
 }
 #sidebar a{
 	text-decoration: none;
@@ -94,7 +125,7 @@ html, body {
 	border-left: none;
 	border-top-right-radius: 10px;
 	border-bottom-right-radius: 10px;
-	top: 200px;
+	top: 250px;
 	left: 0px;
 }
 #sidebar hr{
@@ -104,7 +135,64 @@ html, body {
 .Elem{
 	border-bottom: solid #453823 2px;
 }
-=======
+/* Home page */
+#knapper{
+	width: 30%;
+	text-align: center;
+	vertical-align: center;
+	margin: 130px 0px 100px 100px;
+	float:left;
+	padding-right: 0px;
+
+}
+#description{
+	width: 40%;
+	margin: 80px 100px 100px 0px;
+	padding-left: 0px;
+	float: left;
+}
+#description p{
+	line-height: 200%;
+	font-family: century gothic, sans-serif;
+	color: white;
+	text-shadow: 2px 2px black;
+	font-size: 14pt;
+}
+#knapper a{
+	font-family: sans-serif;
+	color: white;
+	font-weight: bold;
+	font-size: 12pt;
+	text-transform: uppercase;
+	border: solid white 4px;
+	background-color: rgba(26, 26, 26, 0.7);
+	margin-bottom: 50px;
+	text-align: center;
+	padding: 10px;
+	text-shadow: 2px 2px black;
+	border-radius: 10px;
+	text-decoration: none;
+
+}
+#slideshow{
+	position: absolute;
+	float: left;
+	width:  100%;
+	height: 70%;
+	background: transparent url(img/IMG_8189Test_kopi.jpeg) repeat top left;
+	/*background-image: url(IMG_8189Test_kopi.jpeg);*/
+	background-size: 100% 80%;
+	background-repeat: no-repeat;
+	margin-top: 2%;
+	margin-bottom: 10%;
+	background-border-top: solid black 5px;
+}
+#home{
+	margin-left: 0px;
+	padding: 0px;
+}
+/* Slutten på home page*/
+
 /* Kontakt oss skjema */
  form > input, form > textarea {
 	border-radius: 10px;
@@ -143,4 +231,3 @@ html, body {
  }
  /* Slutten på kontakt oss skjema */
 
->>>>>>> origin/master
