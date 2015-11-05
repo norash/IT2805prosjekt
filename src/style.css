@@ -10,6 +10,7 @@ html, body {
  	position: relative;
  	
 	background-color: #E9E0DB;
+	z-index: -1;
  }
  p{
  	font-family: Century Gothic, Tahoma, sans-serif;
@@ -179,13 +180,21 @@ nav li{
 	float: left;
 	width:  100%;
 	height: 70%;
-	background: transparent url(img/IMG_8189Test_kopi.jpeg) repeat top left;
+	background-color: gray;
+	background: transparent url(/Users/sarah/Desktop/slideImages/130126-grindbygg.jpg) repeat top left;
 	/*background-image: url(IMG_8189Test_kopi.jpeg);*/
 	background-size: 100% 80%;
 	background-repeat: no-repeat;
 	margin-top: 2%;
 	margin-bottom: 10%;
 	background-border-top: solid black 5px;
+	z-index: 0;
+	opacity: 0.8;
+
+}
+#slideshowForeground{
+	position: absolute;
+	z-index: 1;
 }
 #home{
 	margin-left: 0px;
