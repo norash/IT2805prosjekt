@@ -102,6 +102,21 @@ header > h1{
 	color: red;
 	margin: none;
 }
+
+a:link {
+	color: blue;
+	text-decoration: none;
+}
+
+a:visited {
+	color: purple;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
 /* slutt felles for alle sidene*/
 /* Navigasjon*/
 nav{
