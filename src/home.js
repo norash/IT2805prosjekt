@@ -57,19 +57,14 @@ function changeSlide(){
 	
 	image.style.backgroundImage = "url("+slideURLs[i]+")";
 	
-
-	//image.style.backgroundImage = slides[i];
-	//console.log(slides[i]);
 	if(i < slides.length-1){
 		i++;
 		console.log(slides[i]);
 	}
 	else{
 		i = 0;
-	}
-	
+	}	
 };
-
 
 window.addEventListener("load", function() {
 	image.style.backgroundImage = "url("+slideURLs[slideURLs.length-1]+")";
