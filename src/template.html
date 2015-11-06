@@ -11,6 +11,27 @@
 			<header><img id="logo" src="img/logo.gif"><h1>Thorsens grindbygg</h1>
 			</header>
 			
+			<div id="nav">
+				<div id="hjemBtn">HJEM</div>
+				<div id="salgBtn" onmouseover="showMenu('salgMenu')" onmouseout="hideMenu('salgMenu')">SALG</div>
+				<div id="salgMenu" style="display: none" onmouseover="showMenu('salgMenu')" onmouseout="hideMenu('salgMenu')">
+					<ul>
+						<li><a href="#">Salg</a></li>
+						<li><a href="#">Lovverk</a></li>
+					</ul>
+				</div>
+				<div id="inspirasjonBtn" onmouseover="showMenu('inspirasjonMenu')" onmouseout="hideMenu('inspirasjonMenu')">INSPIRASJON</div>
+				<div id="inspirasjonMenu" style="display: none" onmouseover="showMenu('inspirasjonMenu')" onmouseout="hideMenu('inspirasjonMenu')">
+					<ul>
+						<li><a href="#">Historie</a></li>
+						<li><a href="#">Prosess</a></li>
+						<li><a href="#">Kurs</a></li>
+						<li><a href="#">Bildegalleri</a></li>
+					</ul>
+				</div>
+				<div id="kontaktBtn">KONTAKT OSS</div>
+			</div>
+			
 			<section>
 				<h1>Historie</h1>
 				<p>
@@ -31,6 +52,8 @@
 			</footer>
 		
 		</div>
+		
+		<script src="nav.js"></script>
 		
 	</body>
 	
