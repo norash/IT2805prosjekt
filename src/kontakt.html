@@ -1,3 +1,10 @@
+<!--
+FILE NAME: kontakt.html
+WRITTEN BY: Jonas Thorsen
+WHEN: November 2015
+PURPOSE: Contact us-form for potential customers to send us their requests and/or questions
+-->
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -12,34 +19,50 @@
 			</header>
 			
 			<section>
-				<h1>Kontakt oss</h1>
-				<p>
-				Kontakt oss om du har spørsmål eller forespørsler angående våre tjenester.<br>
-				Vi prøver å svare så fort som mulig.
-				</p>
-				
-				<div id="form">
-					<form name="kontaktOss" action="MAILTO:jonaseth@stud.ntnu.no" method="post" enctype="text/plain">
-						<label for="navn">Navn:</label>
-						<input type="text" name="navn" size="30">
-						<br>
-						<label for="tlfnummer">Telefonnummer:</label>
-						<input type="text" name="tlfnummer" size="30">
-						<br>
-						<label for="epost">E-postadresse:</label>
-						<input type="text" name="epost" size="30">
-						<br>
-						<label for="postnr" for="gate">Adresse:</label>
-						<input id="postnr" type="text" name="postnr" placeholder="Postnummer" size="9">
-						<input id="gate" type="text" name="gate" placeholder="Gateadresse" size="20">
-						<br>
-						<label id="foresporsel" for="foresporsel">Forespørsel:</label>
-						<textarea name ="foresporsel" rows="4"></textarea>
-						<br>
-						</p>
-						<input id="send" type="submit" value="Send"/>						
-					</form>
+				<div id="leftKontakt">
+					<h1>Kontakt oss</h1>
+					<p>
+					Kontakt oss om du har spørsmål eller forespørsler angående våre tjenester.<br>
+					Vi prøver å svare så fort som mulig.
+					</p>
+					
+					<div id="form">
+						<form name="kontaktOss" action="MAILTO:jonaseth@stud.ntnu.no" method="post" enctype="text/plain">
+							<label for="navn">Navn:</label>
+							<input type="text" name="navn" size="30">
+							<br>
+							<label for="tlfnummer">Telefonnummer:</label>
+							<input type="text" name="tlfnummer" size="30">
+							<br>
+							<label for="epost">E-postadresse:</label>
+							<input type="text" name="epost" size="30">
+							<br>
+							<label for="postnr" for="gate">Adresse:</label>
+							<input id="postnr" type="text" name="postnr" placeholder="Postnummer" size="9">
+							<input id="gate" type="text" name="gate" placeholder="Gateadresse" size="20">
+							<br>
+							<label id="foresporsel" for="foresporsel">Forespørsel:</label>
+							<textarea name ="foresporsel" rows="8"></textarea>
+							<br>
+							</p>
+							<input id="send" type="submit" value="Send"/>						
+						</form>
+					</div>
 				</div>
+				
+				<div id="rightKontakt">
+					<h1>Kontaktinformasjon</h1>
+					<ul>
+						<li>Høgskoleringen 1</li>
+						<li>7491 Trondheim</li>
+						<li>Norge</li>
+						<br>
+						<li>11223344</li>
+						<li>name@mail.no</li>
+					</ul>
+					<div id="map"></div>
+				</div>
+				
 			</section>
 			
 			
@@ -49,6 +72,20 @@
 		
 		</div>
 		
+		<script src="https://maps.googleapis.com/maps/api/js"></script>
+		<script>
+			function initialize(){
+				var mapCanvas = document.getElementById('map');
+				var mapOptions = {
+					center: new google.maps.LatLng(63.417887, 10.403744),
+					zoom: 14,
+					mapTypeId: google.maps.MapTypeId.ROADMAP
+				}
+				var map = new google.maps.Map(mapCanvas, mapOptions);
+			}
+			google.maps.event.addDomListener(window, 'load', initialize);
+		</script>
+
 	</body>
 	
 </html>
