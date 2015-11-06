@@ -1,3 +1,13 @@
+function showMenu(id) {
+	var menu = document.getElementById(id);
+	menu.style.display = "block";
+}
+
+function hideMenu(id) {
+	var menu = document.getElementById(id);
+	menu.style.display = "none";
+}
+
 var image = document.getElementById("slideshow");
 var slideURLs = ['img/IMG_8189bw.JPG', 'img/IMG_7217bw.JPG', 'img/IMG_7211bw.jpg', 'img/IMG_5547bw.JPG', 'img/130126-grindbyggBW.jpg'];
 var slides = [];
