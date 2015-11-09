@@ -60,6 +60,10 @@ html, body {
 	color: #000000;
 	
 }
+
+.btn:hover {
+	font-weight: bold;
+}
 /*slutt navbar*/
  
 #container
