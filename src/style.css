@@ -111,7 +111,7 @@ footer {
 	background-image: url(img/wood-texture.jpg);
 	height: 100px;
  }
- h1{
+header h1{
 	display: inline;
 	margin: 0px;
 	font-family: chalkduster, sans-serif;
@@ -294,7 +294,7 @@ nav li{
 	font-size: 16px;
 	vertical-align: top;
 	padding-top: 10px;
- }*/
+ }
  /* Slutten på kontakt oss skjema */
 
 #mediaplayer {
