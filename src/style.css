@@ -27,8 +27,9 @@ html, body {
 	width: 25%;
 	top: 174px;
 	padding-top: 10px;
-	box-shadow: 0px 0px 0px 2px #453823 inset;
+	box-shadow: 0px -2px 0px 2px #453823 inset;
 	background-color: #C9A798;
+	text-align: left;
 }
 
 #salgMenu {
@@ -43,8 +44,8 @@ html, body {
 
 #salgMenu ul, #inspirasjonMenu ul {
 	margin: 0;
-	padding: 0;
-	list-style: none;
+	padding: 0 30%;
+	list-style: circle;
 }
 
 #nav a {
@@ -59,6 +60,10 @@ html, body {
 #nav a:visited {
 	color: #000000;
 	
+}
+
+#nav a:hover {
+	font-weight: bold;
 }
 
 .btn:hover {
@@ -78,7 +83,7 @@ p {
 }
  
 section {
- 	padding: 10px;
+ 	padding: 50px;
  	padding-bottom: 20px;
  	
  	width: 80%;
