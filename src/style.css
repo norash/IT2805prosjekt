@@ -129,6 +129,10 @@ header h1{
 	font-size: 48pt;
 }
 
+h1{
+	font-family: Century Gothic, Tahoma, sans-serif;
+}
+
 #logo{
 	position: static;
 	float: left;
@@ -178,7 +182,7 @@ nav{
 nav ul{
 	list-style-type: none;
     margin: 0;
-    padding: 10px;
+    padding: 10px 0 10px 0;
     width: 100%;
     height: 20px;
 }
@@ -221,7 +225,7 @@ nav li{
 }
 #description p{
 	line-height: 200%;
-	font-family: century gothic, sans-serif;
+	font-family: century gothic, Tahoma, sans-serif;
 	color: white;
 	text-shadow: 2px 2px black;
 	font-size: 14pt;
@@ -276,7 +280,7 @@ nav li{
 	padding: 5px;
 	margin: 5px;
 	width: 300px;
-	font-family: "Century Gothic";
+	font-family: Century Gothic, Tahoma, sans-serif;
 	font-size: 14px;
  }
  
@@ -315,3 +319,48 @@ nav li{
 	border: 1px solid #453823;
 }
 
+/* Prisberegning på salgsiden */
+#prisvalg p {
+	margin-bottom: 1%;
+	font-size: 18px;
+}
+
+select{
+	width: 150px;
+	margin: 0 2% 0 0;
+	border-radius: 10px;
+	border: 2px solid #453823;
+	background: transparent;
+	font-family: Century Gothic, Tahoma, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+#type, #tresort, #taktekke, #bekledning, #fundament{
+	display: inline-block;
+	position: float;
+}
+
+#prisKnapp {
+	margin: 2% 2% 2% 0;
+	width: 120px;
+	font-weight: bold;
+	border-radius: 10px;
+	border: 2px solid #453823;
+	background-color: #E9E0DB;
+	padding: 5px;
+	font-family: Century Gothic, Tahoma, sans-serif;
+	font-size: 14px;
+}
+
+#tidsspenn{
+	font-family: Century Gothic, Tahoma, sans-serif;
+	font-size: 15px;
+}
+
+#prisOutput{
+	display: inline-block;
+	position: float;
+	text-decoration: underline;
+}
+/* Slutt på salgsiden */

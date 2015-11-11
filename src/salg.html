@@ -72,54 +72,73 @@ PURPOSE:  Give customers the sales related information required.
 					fraktes med bil, på henger. En stor dobbeltgarasje derimot, må bygges på stedet.
 				</p>
 				<p>
-					
+					Her kan du regne ut omtrentlig pris for ulike typer grindbygg. 
+					Alternativene er plassert med hensyn til pris, fra lavest til høyest.
+					<br>
+					Frakt kommer i tillegg.
 				</p>
-				<br>
-				<br>
-				<br>
-				<select id="type">
-					<option value="Lekestue">Lekestue</option>
-					<option value="Bussholdeplasshus">Bussholdeplasshus</option>
-					<option value="Drivhus">Drivhus</option>
-					<option value="Uthus">Uthus</option>
-					<option value="Carport">Carport</option>
-					<option value="Enkeltgarasje">Enkeltgarasje</option>
-					<option value="Dobbelgarasje">Dobbelgarasje</option>
-				</select>
-				<select id="tresort">
-					<option value="Furu">Furu</option>
-					<option value="Gran">Gran</option>
-					<option value="Bjørk">Bjørk</option>
-					<option value="Eik">Eik</option>	
-				</select>
-				<select id="taktekke">
-					<option value="Tretak">Tretak</option>
-					<option value="Shingel">Shingel</option>
-					<option value="Torv">Torv</option>
-					<option value="Skifer">Skifer</option>
-					<option value="Glasstak">Glasstak</option>
-				</select>
-				<select id="bekledning">
-					<option value="Uten vegger">Uten vegger</option>
-					<option value="Glassvegger">Glassvegger</option>
-					<option value="Trevegg">Trevegg</option>
-				</select>
-				<select id="Fundament">
-					<option value="Uten gulv">Uten gulv</option>
-					<option value="Tregulv">Tregulv</option>
-					<option value="Stein">Stein</option>
-					<option value="Betong">Betong</option>
-				</select>
-
+				<div id="prisvalg">
+					<div id="type">
+						<p>Type</p>
+						<select id="typeValg">
+							<option value="8000">Lekestue</option>
+							<option value="12000">Bussholdeplasshus</option>
+							<option value="10000">Drivhus</option>
+							<option value="12000">Carport</option>
+							<option value="15000">Uthus</option>
+							<option value="20000">Enkeltgarasje</option>
+							<option value="35000">Dobbelgarasje</option>
+						</select>
+					</div>
+					<div id="tresort">
+						<p>Tresort</p>
+						<select id="tresortValg">
+							<option value="0.9">Gran</option>
+							<option value="1">Furu</option>
+							<option value="1.15">Bjørk</option>
+							<option value="1.25">Eik</option>	
+						</select>
+					</div>
+					<div id="taktekke">
+						<p>Taktekke</p>
+						<select id="taktekkeValg">
+							<option value="1">Tretak</option>
+							<option value="1.05">Shingel</option>
+							<option value="1.1">Torv</option>
+							<option value="1.2">Skifer</option>
+							<option value="1.25">Glasstak</option>
+						</select>
+					</div>
+					<div id="bekledning">
+						<p>Bekledning</p>
+						<select id="bekledningValg">
+							<option value="1">Uten vegger</option>
+							<option value="1.25">Trevegg</option>
+							<option value="1.3">Glassvegger</option>
+						</select>
+					</div>
+					<div id="fundament">
+						<p>Fundament:</p>
+						<select id="fundamentValg">
+							<option value="1">Uten gulv</option>
+							<option value="1.1">Tregulv</option>
+							<option value="1.2">Stein</option>
+							<option value="1.3">Betong</option>
+						</select>
+					</div>
+					<div id="totalPris">
+						<button id="prisKnapp" type="button">Sjekk prisen</button>
+						<p id="prisOutput"></p>
+					</div>
 						
-				<ul="tidsspenn">
-					<li>Et lite postkassestativ er feridg på ca. 1 uke.</li>
-					<li>Et stort postkassestativ er feridg på ca. 2 uker.</li>
-					<li>En lekestue er feridg på ca. 3 uker.</li>
-					<li>Bussholderplass er feridg på ca. 5 uker.</li>
-					<li>Et vanlig uthus er feridg på ca. 5 uker.</li>
-					<li>En enkeltgarasje er feridg på ca. 6 uker.</li>
-					<li>En dobbeltgarasje er feridg på ca. 8 uker.</li>
+				</div>
+				<p> Her står omtrent hvor lang tid det tar å lage de forskjellige typene:</p>
+				<ul id="tidsspenn">
+					<li>En lekestue er ferdig på ca. 3 uker.</li>
+					<li>Bussholderplass er ferdig på ca. 5 uker.</li>
+					<li>Et vanlig uthus er ferdig på ca. 5 uker.</li>
+					<li>En enkeltgarasje er ferdig på ca. 6 uker.</li>
+					<li>En dobbeltgarasje er ferdig på ca. 8 uker.</li>
 				</ul>
 				<br>
 			</section>
@@ -130,7 +149,7 @@ PURPOSE:  Give customers the sales related information required.
 			</footer>
 		
 		</div>
-		
+		<script type="text/javascript" src="salg.js"></script>
 	</body>
 	
 </html>
