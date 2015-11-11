@@ -1,3 +1,12 @@
+<!--
+FILE NAME: salg.html
+WRITTEN BY:  Mats Sæter
+WHEN:  November 2015
+PURPOSE:  Give customers the sales related information required.
+-->
+
+
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -45,6 +54,7 @@
 				<p>
 					Furu: Furu har en mørkere farge enn gran. Den er mer solid, men også tyngre enn gran. 
 					Årringene er også mer markante enn hos gran, slik at det blir mindre nøytralt.
+					Furu er den vanligste tresorten brukt i grindgygg.
 				</p>
 				<p>
 					Bjørk: Bjørk har en lys farge. Bjørka er som eika seigere og sterkere enn 
@@ -67,42 +77,51 @@
 				<br>
 				<br>
 				<br>
-				<table>
-					<tbody id="prisoversikt">
-						<tr id="tresort">
-							<td id="gran">0.9</td>
-							<td id="Furu">1</td>
-							<td id="Bjørk">1.15</td>
-							<td id="Eik">1.25</td>	
-						</tr>
-						<tr id="transport">
-							<td id="n/a">1</td>
-							<td id="lite">1.1</td>
-							<td id="mellom">1.2</td>
-							<td id="stort">1.3</td>
-						</tr>
-						<tr id="type">
-							<td id="fuglehus">2000</td>
-							<td id="postkassestativ4">4500</td>
-							<td id="postkassestativ10">8000</td>
-							<td id="lekestue">10000</td>
-							<td id="bussholdeplasshus">15000</td>
-							<td id="uthus">15000</td>
-							<td id="enkeltgarasje">21000</td>
-							<td id="dobbelgarasje">38000</td>
-						</tr>
-						<tr id="tidsspenn">
-							<td>Fuglehus er ferdig på ca. fem dager.</td>
-							<td>Et lite postkassestativ er feridg på ca. 1 uke.</td>
-							<td>Et stort postkassestativ er feridg på ca. 2 uker.</td>
-							<td>En lekestue er feridg på ca. 3 uker.</td>
-							<td>Bussholderplass er feridg på ca. 5 uker.</td>
-							<td>Et vanlig uthus er feridg på ca. 5 uker.</td>
-							<td>En enkeltgarasje er feridg på ca. 6 uker.</td>
-							<td>En dobbeltgarasje er feridg på ca. 8 uker.</td>
-						</tr>
-					</tbody>
-				</table>	<br>
+				<select id="type">
+					<option value="Lekestue">Lekestue</option>
+					<option value="Bussholdeplasshus">Bussholdeplasshus</option>
+					<option value="Drivhus">Drivhus</option>
+					<option value="Uthus">Uthus</option>
+					<option value="Carport">Carport</option>
+					<option value="Enkeltgarasje">Enkeltgarasje</option>
+					<option value="Dobbelgarasje">Dobbelgarasje</option>
+				</select>
+				<select id="tresort">
+					<option value="Furu">Furu</option>
+					<option value="Gran">Gran</option>
+					<option value="Bjørk">Bjørk</option>
+					<option value="Eik">Eik</option>	
+				</select>
+				<select id="taktekke">
+					<option value="Tretak">Tretak</option>
+					<option value="Shingel">Shingel</option>
+					<option value="Torv">Torv</option>
+					<option value="Skifer">Skifer</option>
+					<option value="Glasstak">Glasstak</option>
+				</select>
+				<select id="bekledning">
+					<option value="Uten vegger">Uten vegger</option>
+					<option value="Glassvegger">Glassvegger</option>
+					<option value="Trevegg">Trevegg</option>
+				</select>
+				<select id="Fundament">
+					<option value="Uten gulv">Uten gulv</option>
+					<option value="Tregulv">Tregulv</option>
+					<option value="Stein">Stein</option>
+					<option value="Betong">Betong</option>
+				</select>
+
+						
+				<ul="tidsspenn">
+					<li>Et lite postkassestativ er feridg på ca. 1 uke.</li>
+					<li>Et stort postkassestativ er feridg på ca. 2 uker.</li>
+					<li>En lekestue er feridg på ca. 3 uker.</li>
+					<li>Bussholderplass er feridg på ca. 5 uker.</li>
+					<li>Et vanlig uthus er feridg på ca. 5 uker.</li>
+					<li>En enkeltgarasje er feridg på ca. 6 uker.</li>
+					<li>En dobbeltgarasje er feridg på ca. 8 uker.</li>
+				</ul>
+				<br>
 			</section>
 			
 			
