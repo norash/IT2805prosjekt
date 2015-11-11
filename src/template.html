@@ -11,6 +11,27 @@
 			<header><img id="logo" src="img/logo.gif"><h1>Thorsens grindbygg</h1>
 			</header>
 			
+			<div id="nav">
+				<a href="home.html"><div class="btn" id="hjemBtn">HJEM</div></a>
+				<a href="salg.html"><div class="btn" id="salgBtn" onmouseover="showMenu('salgMenu')" onmouseout="hideMenu('salgMenu')">SALG</div></a>
+				<div id="salgMenu" style="display: none" onmouseover="showMenu('salgMenu')" onmouseout="hideMenu('salgMenu')">
+					<ul>
+						<li><a href="salg.html">Salg</a></li>
+						<li><a href="#">Lovverk</a></li>
+					</ul>
+				</div>
+				<a href="historie.html"><div class="btn" id="inspirasjonBtn" onmouseover="showMenu('inspirasjonMenu')" onmouseout="hideMenu('inspirasjonMenu')">INSPIRASJON</div></a>
+				<div id="inspirasjonMenu" style="display: none" onmouseover="showMenu('inspirasjonMenu')" onmouseout="hideMenu('inspirasjonMenu')">
+					<ul>
+						<li><a href="historie.html">Historie</a></li>
+						<li><a href="prosess.html">Prosess</a></li>
+						<li><a href="kurs.html">Kurs</a></li>
+						<li><a href="bildergallery.html">Bildegalleri</a></li>
+					</ul>
+				</div>
+				<a href="kontakt.html"><div class="btn" id="kontaktBtn">KONTAKT OSS</div></a>
+			</div>
+			
 			<section>
 				<h1>Historie</h1>
 				<p>
@@ -31,6 +52,8 @@
 			</footer>
 		
 		</div>
+		
+		<script src="nav.js"></script>
 		
 	</body>
 	
