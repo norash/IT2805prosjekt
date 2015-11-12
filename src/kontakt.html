@@ -17,7 +17,28 @@ PURPOSE: Contact us-form for potential customers to send us their requests and/o
 		<div id="container">
 			<header><img id="logo" src="img/logo.gif"><h1>Thorsens grindbygg</h1>
 			</header>
+			<div id="nav">
+				<a href="home.html"><div class="btn" id="hjemBtn">HJEM</div></a>
+				<a href="salg.html"><div class="btn" id="salgBtn" onmouseover="showMenu('salgMenu')" onmouseout="hideMenu('salgMenu')">SALG</div></a>
+				<div id="salgMenu" style="display: none" onmouseover="showMenu('salgMenu')" onmouseout="hideMenu('salgMenu')">
+					<ul>
+						<li><a href="salg.html">Salg</a></li>
+						<li><a href="lovverk.html">Lovverk</a></li>
+					</ul>
+				</div>
+				<a href="historie.html"><div class="btn" id="inspirasjonBtn" onmouseover="showMenu('inspirasjonMenu')" onmouseout="hideMenu('inspirasjonMenu')">INSPIRASJON</div></a>
+				<div id="inspirasjonMenu" style="display: none" onmouseover="showMenu('inspirasjonMenu')" onmouseout="hideMenu('inspirasjonMenu')">
+					<ul>
+						<li><a href="historie.html">Historie</a></li>
+						<li><a href="prosess.html">Prosess</a></li>
+						<li><a href="kurs.html">Kurs</a></li>
+						<li><a href="bildergallery.html">Bildegalleri</a></li>
+					</ul>
+				</div>
+				<a href="kontakt.html"><div class="btn" id="kontaktBtn">KONTAKT OSS</div></a>
+			</div>
 			
+
 			<section>
 				<div id="leftKontakt">
 					<h1>Kontakt oss</h1>
@@ -27,27 +48,29 @@ PURPOSE: Contact us-form for potential customers to send us their requests and/o
 					</p>
 					
 					<div id="form">
-						<form name="kontaktOss" action="MAILTO:jonaseth@stud.ntnu.no" method="post" enctype="text/plain">
+						<form name="kontaktOss" action="" method="post" enctype="text/plain"
+						onsubmit="validateEmail()">
 							<label for="navn">Navn:</label>
 							<input type="text" name="navn" size="30">
 							<br>
 							<label for="tlfnummer">Telefonnummer:</label>
-							<input type="text" name="tlfnummer" size="30">
+							<input id="tlfInput" type="text" name="tlfnummer" size="30">
 							<br>
 							<label for="epost">E-postadresse:</label>
-							<input type="text" name="epost" size="30">
+							<input id="epostInput" type="text" name="epost" size="30">
 							<br>
 							<label for="postnr" for="gate">Adresse:</label>
 							<input id="postnr" type="text" name="postnr" placeholder="Postnummer" size="9">
 							<input id="gate" type="text" name="gate" placeholder="Gateadresse" size="20">
 							<br>
 							<label id="foresporsel" for="foresporsel">Forespørsel:</label>
-							<textarea name ="foresporsel" rows="8"></textarea>
+							<textarea name ="foresporsel" rows="8" placeholder="Skriv kort hva du trenger hjelp til..." REQUIRED></textarea>
 							<br>
 							</p>
 							<input id="send" type="submit" value="Send"/>						
 						</form>
 					</div>
+					<p id="warning"/>
 				</div>
 				
 				<div id="rightKontakt">
@@ -61,19 +84,21 @@ PURPOSE: Contact us-form for potential customers to send us their requests and/o
 						<li>name@mail.no</li>
 					</ul>
 					<div id="map"></div>
-				</div>
-				
-			</section>
-			
-			
+				</div>	
+			</section>			
 			<footer>
 				<b>Jan Einar Thorsen</b> ~ name@mail.no ~ 11223344
 			</footer>
 		
 		</div>
+		<script src="nav.js"></script>
+		<script type= "text/javascript" src="valid.js"></script>
 		
+		<!-- Google kart lagt til ved hjelp av denne siden:
+		https://developers.google.com/maps/tutorials/fundamentals/adding-a-google-map-->
+
 		<script src="https://maps.googleapis.com/maps/api/js"></script>
-		<script>
+		<script type="text/javascript">
 			function initialize(){
 				var mapCanvas = document.getElementById('map');
 				var mapOptions = {

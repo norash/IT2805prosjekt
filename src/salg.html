@@ -1,3 +1,12 @@
+<!--
+FILE NAME: salg.html
+WRITTEN BY:  Mats Sæter
+WHEN:  November 2015
+PURPOSE:  Give customers the sales related information required.
+-->
+
+
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -11,12 +20,26 @@
 			<header><img id="logo" src="img/logo.gif"><h1>Thorsens grindbygg</h1>
 			</header>
 				
-			<nav id="top_bar"><ul>
-				<li><a href="home.html">Hjem</a></li>
-				<li><a href="salg.html">Salg</a></li>
-				<li><a href="historie.html">Inspirasjon</a></li>
-				<li><a href="kontakt.html">Kontakt oss</a></li>
-			</ul></nav>
+			<div id="nav">
+				<a href="home.html"><div class="btn" id="hjemBtn">HJEM</div></a>
+				<a href="salg.html"><div class="btn" id="salgBtn" onmouseover="showMenu('salgMenu')" onmouseout="hideMenu('salgMenu')">SALG</div></a>
+				<div id="salgMenu" style="display: none" onmouseover="showMenu('salgMenu')" onmouseout="hideMenu('salgMenu')">
+					<ul>
+						<li><a href="salg.html">Salg</a></li>
+						<li><a href="lovverk.html">Lovverk</a></li>
+					</ul>
+				</div>
+				<a href="historie.html"><div class="btn" id="inspirasjonBtn" onmouseover="showMenu('inspirasjonMenu')" onmouseout="hideMenu('inspirasjonMenu')">INSPIRASJON</div></a>
+				<div id="inspirasjonMenu" style="display: none" onmouseover="showMenu('inspirasjonMenu')" onmouseout="hideMenu('inspirasjonMenu')">
+					<ul>
+						<li><a href="historie.html">Historie</a></li>
+						<li><a href="prosess.html">Prosess</a></li>
+						<li><a href="kurs.html">Kurs</a></li>
+						<li><a href="bildergallery.html">Bildegalleri</a></li>
+					</ul>
+				</div>
+				<a href="kontakt.html"><div class="btn" id="kontaktBtn">KONTAKT OSS</div></a>
+			</div>
 				
 			<div id="sidebar">
 				<ul>
@@ -45,6 +68,7 @@
 				<p>
 					Furu: Furu har en mørkere farge enn gran. Den er mer solid, men også tyngre enn gran. 
 					Årringene er også mer markante enn hos gran, slik at det blir mindre nøytralt.
+					Furu er den vanligste tresorten brukt i grindgygg.
 				</p>
 				<p>
 					Bjørk: Bjørk har en lys farge. Bjørka er som eika seigere og sterkere enn 
@@ -62,47 +86,75 @@
 					fraktes med bil, på henger. En stor dobbeltgarasje derimot, må bygges på stedet.
 				</p>
 				<p>
-					
+					Her kan du regne ut omtrentlig pris for ulike typer grindbygg. 
+					Alternativene er plassert med hensyn til pris, fra lavest til høyest.
+					<br>
+					Frakt kommer i tillegg.
 				</p>
+				<div id="prisvalg">
+					<div id="type">
+						<p>Type</p>
+						<select id="typeValg">
+							<option value="8000">Lekestue</option>
+							<option value="12000">Bussholdeplasshus</option>
+							<option value="10000">Drivhus</option>
+							<option value="12000">Carport</option>
+							<option value="15000">Uthus</option>
+							<option value="20000">Enkeltgarasje</option>
+							<option value="35000">Dobbelgarasje</option>
+						</select>
+					</div>
+					<div id="tresort">
+						<p>Tresort</p>
+						<select id="tresortValg">
+							<option value="0.9">Gran</option>
+							<option value="1">Furu</option>
+							<option value="1.15">Bjørk</option>
+							<option value="1.25">Eik</option>	
+						</select>
+					</div>
+					<div id="taktekke">
+						<p>Taktekke</p>
+						<select id="taktekkeValg">
+							<option value="1">Tretak</option>
+							<option value="1.05">Shingel</option>
+							<option value="1.1">Torv</option>
+							<option value="1.2">Skifer</option>
+							<option value="1.25">Glasstak</option>
+						</select>
+					</div>
+					<div id="bekledning">
+						<p>Bekledning</p>
+						<select id="bekledningValg">
+							<option value="1">Uten vegger</option>
+							<option value="1.25">Trevegg</option>
+							<option value="1.3">Glassvegger</option>
+						</select>
+					</div>
+					<div id="fundament">
+						<p>Fundament:</p>
+						<select id="fundamentValg">
+							<option value="1">Uten gulv</option>
+							<option value="1.1">Tregulv</option>
+							<option value="1.2">Stein</option>
+							<option value="1.3">Betong</option>
+						</select>
+					</div>
+					<div id="totalPris">
+						<button id="prisKnapp" type="button">Sjekk prisen</button>
+						<p id="prisOutput"></p>
+					</div>
+						
+				</div>
+				<p> Her står omtrent hvor lang tid det tar å lage de forskjellige typene:</p>
+				<ul id="tidsspenn">
+					<li>En lekestue er ferdig på ca. 3 uker.</li>
+					<li>Bussholderplass er ferdig på ca. 5 uker.</li>
+					<li>Et vanlig uthus er ferdig på ca. 5 uker.</li>
+					<li>En enkeltgarasje er ferdig på ca. 6 uker.</li>
+					<li>En dobbeltgarasje er ferdig på ca. 8 uker.</li>
+				</ul>
 				<br>
-				<br>
-				<br>
-				<table>
-					<tbody id="prisoversikt">
-						<tr id="tresort">
-							<td id="gran">0.9</td>
-							<td id="Furu">1</td>
-							<td id="Bjørk">1.15</td>
-							<td id="Eik">1.25</td>	
-						</tr>
-						<tr id="transport">
-							<td id="n/a">1</td>
-							<td id="lite">1.1</td>
-							<td id="mellom">1.2</td>
-							<td id="stort">1.3</td>
-						</tr>
-						<tr id="type">
-							<td id="fuglehus">2000</td>
-							<td id="postkassestativ4">4500</td>
-							<td id="postkassestativ10">8000</td>
-							<td id="lekestue">10000</td>
-							<td id="bussholdeplasshus">15000</td>
-							<td id="uthus">15000</td>
-							<td id="enkeltgarasje">21000</td>
-							<td id="dobbelgarasje">38000</td>
-						</tr>
-						<tr id="tidsspenn">
-							<td>Fuglehus er ferdig på ca. fem dager.</td>
-							<td>Et lite postkassestativ er feridg på ca. 1 uke.</td>
-							<td>Et stort postkassestativ er feridg på ca. 2 uker.</td>
-							<td>En lekestue er feridg på ca. 3 uker.</td>
-							<td>Bussholderplass er feridg på ca. 5 uker.</td>
-							<td>Et vanlig uthus er feridg på ca. 5 uker.</td>
-							<td>En enkeltgarasje er feridg på ca. 6 uker.</td>
-							<td>En dobbeltgarasje er feridg på ca. 8 uker.</td>
-						</tr>
-					</tbody>
-				</table>	<br>
 			</section>
 			
 			
@@ -111,7 +163,8 @@
 			</footer>
 		
 		</div>
-		
+		<script src="nav.js"></script>
+		<script type="text/javascript" src="salg.js"></script>
 	</body>
 	
 </html>

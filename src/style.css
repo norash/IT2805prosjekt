@@ -4,6 +4,76 @@ html, body {
 	padding: 0;
 	height: 100%;
 }
+
+/*start navbar*/
+#nav {
+	font-family: Georgia, Tahoma, sans-serif;
+	font-size: 20px;
+	text-align: center;
+	z-index: 5;
+}
+
+#hjemBtn, #salgBtn, #inspirasjonBtn, #kontaktBtn {
+	float: left;
+	width: 25%;
+	height: 30px;
+	padding-top: 5px;
+	box-shadow: 0px 0px 0px 1px #453823 inset;
+	border-bottom: 1px solid #453823;
+	background-color: #C9A798;
+}
+
+#salgMenu, #inspirasjonMenu {
+	position: absolute;
+	width: 25%;
+	top: 174px;
+	padding-top: 10px;
+	box-shadow: 0px -2px 0px 2px #453823 inset;
+	background-color: #C9A798;
+	text-align: left;
+}
+#inspirasjonMeny a:hover{
+	font-weight: bold;
+}
+
+#salgMenu {
+	height: 50px;
+	left: 25%;
+}
+
+#inspirasjonMenu {
+	height: 100px;
+	left: 50%;
+}
+
+#salgMenu ul, #inspirasjonMenu ul {
+	margin: 0;
+	padding: 0 30%;
+	list-style: circle;
+}
+
+#nav a {
+	text-decoration: none;
+}
+
+#nav a:link {
+	color: #000000;
+	
+}
+
+#nav a:visited {
+	color: #000000;
+	
+}
+
+#nav a:hover {
+	font-weight: bold;
+}
+
+.btn:hover {
+	font-weight: bold;
+}
+/*slutt navbar*/
  
 #container
  {
@@ -12,28 +82,27 @@ html, body {
  	
 	background-color: #E9E0DB;
  }
- p{
+p {
  	font-family: Century Gothic, Tahoma, sans-serif;
- }
+}
  
- section {
- 	padding: 10px;
+section {
+ 	padding: 50px;
  	padding-bottom: 20px;
  	
  	width: 80%;
 	margin-left: 150px;
 	margin-right: auto;
-	
-	font-family: Century Gothic, Tahoma, sans-serif;
  }
  
- img {
+img {
 	width: 300px;
 	border: 1px solid  #453823;
 	float: right;
 	clear: right;
 	margin: 15px;
 }
+
 footer {
  	position: absolute;
  	bottom: 0;
@@ -55,7 +124,7 @@ footer {
 	background-image: url(img/wood-texture.jpg);
 	height: 100px;
  }
-header > h1{
+header h1{
 	display: inline;
 	margin: 0px;
 	font-family: chalkduster, sans-serif;
@@ -63,17 +132,22 @@ header > h1{
 	padding: 50px;
 	font-size: 48pt;
 }
-	
+
+h1{
+	font-family: Century Gothic, Tahoma, sans-serif;
+}
+
 #logo{
 	position: static;
 	float: left;
 	bottom: 30px;
 	margin: none;
 	border: none;
-	height: 100%;
+	height: 90px;
 	width: 7%;
 
 }
+
 #sidebar li{
 	list-style-type: none;
 	padding: 5px;
@@ -90,6 +164,7 @@ header > h1{
 #sidebar{
 	position: fixed;
 	float: left;
+	width: 100px;
 	background-color: #C9A798;
 	border: solid #453823 2px;
 	border-left: none;
@@ -102,21 +177,9 @@ header > h1{
 	color: red;
 	margin: none;
 }
-
-a:link {
-	color: blue;
-	text-decoration: none;
+#sidebar a:hover{
+	font-weight: bold;
 }
-
-a:visited {
-	color: purple;
-	text-decoration: none;
-}
-
-a:hover {
-	text-decoration: underline;
-}
-
 /* slutt felles for alle sidene*/
 /* Navigasjon*/
 nav{
@@ -127,7 +190,7 @@ nav{
 nav ul{
 	list-style-type: none;
     margin: 0;
-    padding: 10px;
+    padding: 10px 0 10px 0;
     width: 100%;
     height: 20px;
 }
@@ -141,10 +204,6 @@ nav li{
 	text-align: center;
 	font-weight: bold;
 	padding: 8px 60px 8px 60px;
-}
-}
-#top_bar a {
-	color: black;
 }
 /* Slutten på navigasjon*/
 
@@ -174,7 +233,7 @@ nav li{
 }
 #description p{
 	line-height: 200%;
-	font-family: century gothic, sans-serif;
+	font-family: century gothic, Tahoma, sans-serif;
 	color: white;
 	text-shadow: 2px 2px black;
 	font-size: 14pt;
@@ -204,7 +263,7 @@ nav li{
 	background: transparent url(/Users/sarah/Desktop/slideImages/130126-grindbygg.jpg) repeat top left;
 	background-size: 100% 80%;
 	background-repeat: no-repeat;
-	margin-top: 2%;
+	margin-top: 5%;
 	margin-bottom: 10%;
 	background-border-top: solid black 5px;
 	z-index: 0;
@@ -213,6 +272,7 @@ nav li{
 }
 #slideshowForeground{
 	position: absolute;
+	margin-top: 6%;
 	z-index: 1;
 }
 #home{
@@ -221,7 +281,7 @@ nav li{
 }
 /* Slutten på home page*/
 
-/* Kontakt oss */
+/* Kontakt oss skjema */
  form > input, form > textarea {
 	border-radius: 10px;
 	border: 2px solid #453823;
@@ -229,22 +289,22 @@ nav li{
 	padding: 5px;
 	margin: 5px;
 	width: 300px;
-	font-family: "Century Gothic";
+	font-family: Century Gothic, Tahoma, sans-serif;
 	font-size: 14px;
  }
  
 
- form > #postnr {
+ #postnr {
 	width: 90px;
 	margin-right: 0px;
  }
  
- form > #gate {
+ #gate {
 	width: 193px;
 	margin-left: 0px;
  }
  
- form > #send {
+ #send {
 	width: 80px;
 	font-weight: bold;
  }
@@ -257,34 +317,58 @@ nav li{
 	vertical-align: top;
 	padding-top: 10px;
  }
- 
- #leftKontakt {
-	 float: left;
-	 width: auto;
-	 padding: 0 50px 0 50px;
- }
- 
- #rightKontakt > p {
-	 font-size: 20px;
- }
- 
- #rightKontakt > ul {
-	 list-style-type: none;
-	 font-size: 18px;
- }
- 
- #map {
-	 width: 400px;
-	 height: 300px;
-	 border: 1px solid black;
- }
- 
- #rightKontakt {
-	 float: left;
-	 width: auto;
-	 padding: 0 50px 50px; 50px;
- }
- 
- 
- /* Slutten på kontakt oss */
+ /* Slutten på kontakt oss skjema */
 
+#mediaplayer {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	width: 600px;
+	height: 350px;
+}
+
+/* Prisberegning på salgsiden */
+#prisvalg p {
+	margin-bottom: 1%;
+	font-size: 18px;
+}
+
+select{
+	width: 150px;
+	margin: 0 2% 0 0;
+	border-radius: 10px;
+	border: 2px solid #453823;
+	background: transparent;
+	font-family: Century Gothic, Tahoma, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+#type, #tresort, #taktekke, #bekledning, #fundament{
+	display: inline-block;
+	position: float;
+}
+
+#prisKnapp {
+	margin: 2% 2% 2% 0;
+	width: 120px;
+	font-weight: bold;
+	border-radius: 10px;
+	border: 2px solid #453823;
+	background-color: #E9E0DB;
+	padding: 5px;
+	font-family: Century Gothic, Tahoma, sans-serif;
+	font-size: 14px;
+}
+
+#tidsspenn{
+	font-family: Century Gothic, Tahoma, sans-serif;
+	font-size: 15px;
+}
+
+#prisOutput{
+	display: inline-block;
+	position: float;
+	text-decoration: underline;
+}
+/* Slutt på salgsiden */

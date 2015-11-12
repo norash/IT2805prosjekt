@@ -9,42 +9,64 @@
 	<body>
 		
 		<div id="container">
-		<header><img id="logo" src="img/logo.gif"><h1>Thorsens grindbygg</h1>
+			<header><img id="logo" src="img/logo.gif"><h1>Thorsens grindbygg</h1>
 			</header>
-		<div id="sidebar">
-			<ul>
-				<li class="Elem" ><a href="historie.html">HISTORIE</a></li>
-				<li class="Elem" ><a href="">PROSESS</a></li>
-				<li class="Elem" ><a href="kurs.html">KURS</a></li>
-				<li><a href="">GALLERI</a></li>
-			</ul>
+			
+			<div id="nav">
+				<a href="home.html"><div class="btn" id="hjemBtn">HJEM</div></a>
+				<a href="salg.html"><div class="btn" id="salgBtn" onmouseover="showMenu('salgMenu')" onmouseout="hideMenu('salgMenu')">SALG</div></a>
+				<div id="salgMenu" style="display: none" onmouseover="showMenu('salgMenu')" onmouseout="hideMenu('salgMenu')">
+					<ul>
+						<li><a href="salg.html">Salg</a></li>
+						<li><a href="lovverk.html">Lovverk</a></li>
+					</ul>
+				</div>
+				<a href="historie.html"><div class="btn" id="inspirasjonBtn" onmouseover="showMenu('inspirasjonMenu')" onmouseout="hideMenu('inspirasjonMenu')">INSPIRASJON</div></a>
+				<div id="inspirasjonMenu" style="display: none" onmouseover="showMenu('inspirasjonMenu')" onmouseout="hideMenu('inspirasjonMenu')">
+					<ul>
+						<li><a href="historie.html">Historie</a></li>
+						<li><a href="prosess.html">Prosess</a></li>
+						<li><a href="kurs.html">Kurs</a></li>
+						<li><a href="bildergallery.html">Bildegalleri</a></li>
+					</ul>
+				</div>
+				<a href="kontakt.html"><div class="btn" id="kontaktBtn">KONTAKT OSS</div></a>
+			</div>
+			
+			<div id="sidebar">
+				<ul>
+					<li class="Elem" ><a href="historie.html">HISTORIE</a></li>
+					<li class="Elem" ><a href="prosess.html">PROSESS</a></li>
+					<li class="Elem" ><a href="kurs.html">KURS</a></li>
+					<li><a href="bildergallery.html">GALLERI</a></li>
+				</ul>
 			</div>
 			
 			<section>
 				<h1>Historie</h1>
 				<p>
-					Grindverk, grindbygg eller grindverksbygg, òg kalla troskykkje (Hardanger), er ein byggjeteknikk som tradisjonelt har vore mykje 
-					bruka i Vest-Europa. På Vestlandet i Noreg har denne byggjemåten vore mest bruka til løer og naust dei siste få hundreåra. 
-					Byggjemåten er elles ukjent i Noreg nordom Romsdal og austom Rogaland.	
+					Grindverk, grindbygg eller grindverksbygg, er en byggeteknikk som tradisjonelt har vært mye 
+					bruk i Vest-Europa. På Vestlandet i Norge har denne byggemåten vært mest brukt til låver og naust de siste få hundreåra. 
+					Byggemåten er ellers ukjent i Norge nord for Romsdal og øst for Rogaland.	
 				</p>	
 				<figure><img src="img/800px-Grindverk.jpg" alt="Grindverk" style="width: 300px; height: 220px"></figure>
 				<p>
-					Mange meiner at denne konstruksjonsteknikken er ei vidareutvikling av forhistoriske byggjemåtar for langhus der folk og fe budde 
-					under eitt tak som vart bore av parstilte, jordgrovne stolpar. Arkeologiske undersøkingar har påvist stolpehol etter langhus som 
-					kan vera over 4 000 år gamle. I dag finn vi grindverk i gamle løer , naust og uthus.
+					Mange mener at denne konstruksjonsteknikken er en videreutvikling av forhistoriske byggemåtar for langhus der folk og fe bodde 
+					under ett tak som ble bært av parstilte, jordgrovne stolpar. Arkeologiske undersøkelser har påvist stolpehull etter langhus som 
+					kan være over 4 000 år gamle. I dag finner vi grindverk i gamle låver , naust og uthus.
 				</p>
 				<p>
-					Grindbygde hus har to eller fleire grinder etter kvarandre på tvers av lengderetninga på huset. Antalet grinder blir avgjort av 
-					huslengda. Ei grind har to stavar som blir samanbundne med ein bete (tverrbjelke) og to (eller to par) snedband (skråband). 
-					Tradisjonelt blir det ikkje brukt spikar, men snedbanda er festa med trenaglar laga i eit hardt tremateriale (for eksempel eine 
-					eller spik). Over beten, inntil stavane, ligg to stavlægjer som bind huset saman i lengderetninga og støttar taksperrene. 
-					Knutepunktet mellom stav, bete og stavlægje er slik utforma slik at alle delane blir fast samanlåste. Stavane i grindhus er 
-					ikkje nedgrovne i jord slik som i forhistoriske hus, men står på stein.
+					Grindbygde hus har to eller flere grinder etter hverandre på tvers av lengderetningen på huset. Antallet grinder blir avgjort av 
+					huslengden. En grind har to stavar som blir bindt sammen med en bete (tverrbjelke) og to (eller to par) snedband (skråband). 
+					Tradisjonelt blir det ikke brukt spiker, men snedbanda er festet med trenagler laget i et hardt tremateriale (for eksempel eine 
+					eller spik). Over beten, inntil stavane, ligger to stavlægjer som binder huset sammen i lengderetningen og støttar taksperrene. 
+					Knutepunktet mellom stav, bete og stavlægje er slik utformet slik at alle delene blir fast sammenlåste. Stavane i grindhus er 
+					ikke gravd ned i jord slik som i forhistoriske hus, men står på stein.
 				</p>
 				<p>
-					Grindkonstruksjonen har i nyare tid stort sett berre vore bruka til uthus som ikkje treng oppvarming. Veggene er oftast av 
-					bordkledd bindingsverk. Bindingsverket kan vera frittståande utanfor rekkja av stavar, eller det kan vera festa til stavane i 
-					kvar grind.
+					Grindkonstruksjonen har i nyere tid stort sett bare vært brukt til uthus som ikke trenger oppvarming. Veggene er oftest av 
+					bordkledd bindingsverk. Bindingsverket kan være frittstående utanfor rekka av staver, eller det kan være festet til stavane i 
+					hver grind.
 				</p>
 			</section>
 			
@@ -54,6 +76,8 @@
 			</footer>
 		
 		</div>
+		
+		<script src="nav.js"></script>
 		
 	</body>
 	
