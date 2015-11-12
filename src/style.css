@@ -89,7 +89,6 @@ p {
 section {
  	padding: 50px;
  	padding-bottom: 20px;
- 	
  	width: 80%;
 	margin-left: 150px;
 	margin-right: auto;
@@ -285,7 +284,7 @@ nav li{
  form > input, form > textarea {
 	border-radius: 10px;
 	border: 2px solid #453823;
-	background-color: #E9E0DB;
+	background: transparent;
 	padding: 5px;
 	margin: 5px;
 	width: 300px;
@@ -296,20 +295,27 @@ nav li{
 
  #postnr {
 	width: 90px;
-	margin-right: 0px;
+	margin-right: 0;
  }
  
  #gate {
 	width: 193px;
-	margin-left: 0px;
+	margin-left: 0;
  }
  
  #send {
 	width: 80px;
 	font-weight: bold;
  }
+ 
+ #send:active {
+	margin: 6px 0 10px 7.5px;
+	width: 75px;
+	padding: 3px;
+	font-size: 12px;
+ }
 
- form > label, form > p{
+ form > label, form > p {
 	text-align: left;
 	display: inline-block;
 	width: 140px;
@@ -317,6 +323,37 @@ nav li{
 	vertical-align: top;
 	padding-top: 10px;
  }
+ 
+ #leftKontakt {
+	 display: inline-block;
+	 margin: 0 100px 20px 0;
+	 float: left;
+ }
+ 
+ #rightKontakt p {
+	 font-size: 20px;
+ }
+ 
+ #rightKontakt ul {
+	 list-style-type: none;
+	 font-size: 18px;
+ }
+ 
+ #map {
+	 width: 400px;
+	 height: 300px;
+	 border: 2px solid #453823;
+ }
+ 
+ #rightKontakt {
+	 display: inline-block;
+ }
+ 
+ #kontaktOssSkjema {
+	 padding-bottom: 75px;
+	 font-family: Century Gothic, Tahoma, sans-serif;
+ }
+ 
  /* Slutten på kontakt oss skjema */
 
 #mediaplayer {

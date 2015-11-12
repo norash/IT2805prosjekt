@@ -9,7 +9,7 @@ PURPOSE: Contact us-form for potential customers to send us their requests and/o
 <html>
 	<head>
 		<meta charset="UTF-8">
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
 		<title>Kontakt oss</title>
 	</head>
 	
@@ -40,51 +40,53 @@ PURPOSE: Contact us-form for potential customers to send us their requests and/o
 			
 
 			<section>
-				<div id="leftKontakt">
-					<h1>Kontakt oss</h1>
-					<p>
-					Kontakt oss om du har spørsmål eller forespørsler angående våre tjenester.<br>
-					Vi prøver å svare så fort som mulig.
-					</p>
-					
-					<div id="form">
-						<form name="kontaktOss" action="" method="post" enctype="text/plain"
-						onsubmit="validateEmail()">
-							<label for="navn">Navn:</label>
-							<input type="text" name="navn" size="30">
-							<br>
-							<label for="tlfnummer">Telefonnummer:</label>
-							<input id="tlfInput" type="text" name="tlfnummer" size="30">
-							<br>
-							<label for="epost">E-postadresse:</label>
-							<input id="epostInput" type="text" name="epost" size="30">
-							<br>
-							<label for="postnr" for="gate">Adresse:</label>
-							<input id="postnr" type="text" name="postnr" placeholder="Postnummer" size="9">
-							<input id="gate" type="text" name="gate" placeholder="Gateadresse" size="20">
-							<br>
-							<label id="foresporsel" for="foresporsel">Forespørsel:</label>
-							<textarea name ="foresporsel" rows="8" placeholder="Skriv kort hva du trenger hjelp til..." REQUIRED></textarea>
-							<br>
-							</p>
-							<input id="send" type="submit" value="Send"/>						
-						</form>
+				<div id="kontaktOssSkjema">
+					<div id="leftKontakt">
+						<h1>Kontakt oss</h1>
+						<p>
+						Kontakt oss om du har spørsmål eller forespørsler angående våre tjenester.<br>
+						Vi prøver å svare så fort som mulig.
+						</p>
+						
+						<div id="form">
+							<form name="kontaktOss" action="" method="post" enctype="text/plain"
+							onsubmit="validateEmail()">
+								<label for="navn">Navn:</label>
+								<input id="navnInput" type="text" name="navn" size="30">
+								<br>
+								<label for="tlfnummer">Telefonnummer:</label>
+								<input id="tlfInput" type="text" name="tlfnummer" size="30">
+								<br>
+								<label for="epost">E-postadresse:</label>
+								<input id="epostInput" type="text" name="epost" size="30">
+								<br>
+								<label for="postnr" for="gate">Adresse:</label>
+								<input id="postnr" type="text" name="postnr" placeholder="Postnummer" size="9">
+								<input id="gate" type="text" name="gate" placeholder="Gateadresse" size="20">
+								<br>
+								<label id="foresporsel" for="foresporsel">Forespørsel:</label>
+								<textarea id="foresporselInput" name="foresporsel" placeholder="Skriv kort hva du trenger hjelp til..." rows="8"></textarea>
+								<br>
+								</p>
+								<input id="send" type="submit" value="Send"/>						
+							</form>
+						</div>
+						<p id="warning"/>
 					</div>
-					<p id="warning"/>
+					
+					<div id="rightKontakt">
+						<h1>Kontaktinformasjon</h1>
+						<ul>
+							<li>Høgskoleringen 1</li>
+							<li>7491 Trondheim</li>
+							<li>Norge</li>
+							<br>
+							<li>11223344</li>
+							<li>name@mail.no</li>
+						</ul>
+						<div id="map"></div>
+					</div>
 				</div>
-				
-				<div id="rightKontakt">
-					<h1>Kontaktinformasjon</h1>
-					<ul>
-						<li>Høgskoleringen 1</li>
-						<li>7491 Trondheim</li>
-						<li>Norge</li>
-						<br>
-						<li>11223344</li>
-						<li>name@mail.no</li>
-					</ul>
-					<div id="map"></div>
-				</div>	
 			</section>			
 			<footer>
 				<b>Jan Einar Thorsen</b> ~ name@mail.no ~ 11223344
