@@ -10,6 +10,7 @@ html, body {
 	font-family: Georgia, Tahoma, sans-serif;
 	font-size: 20px;
 	text-align: center;
+	z-index: 5;
 }
 
 #hjemBtn, #salgBtn, #inspirasjonBtn, #kontaktBtn {
@@ -30,6 +31,9 @@ html, body {
 	box-shadow: 0px -2px 0px 2px #453823 inset;
 	background-color: #C9A798;
 	text-align: left;
+}
+#inspirasjonMeny a:hover{
+	font-weight: bold;
 }
 
 #salgMenu {
@@ -156,6 +160,7 @@ header h1{
 #sidebar{
 	position: fixed;
 	float: left;
+	width: 100px;
 	background-color: #C9A798;
 	border: solid #453823 2px;
 	border-left: none;
@@ -167,6 +172,9 @@ header h1{
 #sidebar hr{
 	color: red;
 	margin: none;
+}
+#sidebar a:hover{
+	font-weight: bold;
 }
 /* slutt felles for alle sidene*/
 /* Navigasjon*/
@@ -251,7 +259,7 @@ nav li{
 	background: transparent url(/Users/sarah/Desktop/slideImages/130126-grindbygg.jpg) repeat top left;
 	background-size: 100% 80%;
 	background-repeat: no-repeat;
-	margin-top: 2%;
+	margin-top: 5%;
 	margin-bottom: 10%;
 	background-border-top: solid black 5px;
 	z-index: 0;
@@ -260,6 +268,7 @@ nav li{
 }
 #slideshowForeground{
 	position: absolute;
+	margin-top: 6%;
 	z-index: 1;
 }
 #home{
@@ -312,6 +321,5 @@ nav li{
 	margin-right: auto;
 	width: 600px;
 	height: 350px;
-	border: 1px solid #453823;
 }
 
