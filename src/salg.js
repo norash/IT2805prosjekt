@@ -1,3 +1,10 @@
+/*
+FILE NAME: salg.js
+WRITTEN BY: Jonas Thorsen og Mats Sæter
+WHEN: November 2015
+PURPOSE: JavaScript to calculate grindbygg prices
+*/
+
 var type = document.getElementById("typeValg");
 var tresort = document.getElementById("tresortValg");
 var taktekke = document.getElementById("taktekkeValg");
@@ -11,5 +18,3 @@ document.getElementById("prisKnapp").addEventListener('click',function(){
 	
 	
 });
-
-//onchange=function()

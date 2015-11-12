@@ -1,5 +1,5 @@
 var image = document.getElementById("slideshow");
-var slideURLs = ['img/IMG_8189bw.JPG', 'img/IMG_7217bw.JPG', 'img/IMG_7211bw.jpg', 'img/IMG_5547bw.JPG', 'img/130126-grindbyggBW.jpg'];
+var slideURLs = ['img/IMG_8189bw.JPG', 'img/IMG_7217bw.JPG', 'img/IMG_7211bw.jpg', 'img/IMG_5547bw.JPG'];
 var slides = [];
 
 var startSlide;
