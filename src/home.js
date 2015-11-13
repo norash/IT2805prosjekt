@@ -1,5 +1,5 @@
 var image = document.getElementById("slideshow");
-var slideURLs = ['img/IMG_8189bw.JPG', 'img/IMG_7217bw.JPG', 'img/IMG_7211bw.jpg', 'img/IMG_5547bw.JPG'];
+var slideURLs = ['img/2bw.JPG','img/IMG_8189bw.JPG', 'img/IMG_7217bw.JPG', 'img/IMG_7211bw.jpg', 'img/IMG_5547bw.JPG'];
 var slides = [];
 
 var startSlide;
