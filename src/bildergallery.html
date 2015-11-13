@@ -1,136 +1,176 @@
+<!--
+FILE NAME: galleri.html
+WRITTEN BY: Wei Wei
+WHEN: November 2015
+PURPOSE: 
+-->
+
+<!DOCTYPE html>
 <html>
 <head>
-<title> bilder  </title>
-<style>
-body {
-	background-color:#E9E0DB;
-}
-		
-header {
-	font-family:"Poor Richard";
-	font-size:300%;
-	text-align: center;
-	font-color: #CCCBB3
-}
-
-table { 
-	font-family: "Georgia",serif;
-	font-size: 200%;
-	font-color: balck;
-	text-align: center;
-	background-color: #C9A798;
-}
-
-
-div.img {
-    margin: 5px;
-    padding: 5px;
-    border: 1px solid #0000ff;
-    height: auto;
-    width: auto;
-    float: left;
-    text-align: center;
-}
-
-div.img img {
-    display: inline;
-    margin: 5px;
-    border: 1px solid #ffffff;
-}
-
-div.img a:hover img {
-    border:1px solid #0000ff;
-}
-
-div.desc {
-    text-align: center;
-    font-weight: normal;
-    width: 120px;
-    margin: 5px;
-}
-
-#footer { 
-	font-family: "Georgia",serif;
-	font-size: 150%;
-	background-color: #C9A798;
-	color:#262626;
-	clear:both;
-	text-align:center;
-	padding:10px;
-}
-
-
-</style>
+<title> Bildegalleri </title>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="style.css">
 </head>
+
 <body>
-<header> 
-Thorsens gridbygg 
-</header>
+	<div id="container">
+		<header><img id="logo" src="img/logo.gif"><h1>Thorsens grindbygg</h1>
+		</header>
+			
+			<div id="nav">
+				<a href="home.html"><div class="btn" id="hjemBtn">HJEM</div></a>
+				<a href="salg.html"><div class="btn" id="salgBtn" onmouseover="showMenu('salgMenu')" onmouseout="hideMenu('salgMenu')">SALG</div></a>
+				<div id="salgMenu" style="display: none" onmouseover="showMenu('salgMenu')" onmouseout="hideMenu('salgMenu')">
+					<ul>
+						<li><a href="salg.html">Salg</a></li>
+						<li><a href="lovverk.html">Lovverk</a></li>
+					</ul>
+				</div>
+				<a href="historie.html"><div class="btn" id="inspirasjonBtn" onmouseover="showMenu('inspirasjonMenu')" onmouseout="hideMenu('inspirasjonMenu')">INSPIRASJON</div></a>
+				<div id="inspirasjonMenu" style="display: none" onmouseover="showMenu('inspirasjonMenu')" onmouseout="hideMenu('inspirasjonMenu')">
+					<ul>
+						<li><a href="historie.html">Historie</a></li>
+						<li><a href="prosess.html">Prosess</a></li>
+						<li><a href="kurs.html">Kurs</a></li>
+						<li><a href="bildergallery.html">Bildegalleri</a></li>
+					</ul>
+				</div>
+				<a href="kontakt.html"><div class="btn" id="kontaktBtn">KONTAKT OSS</div></a>
+			</div>
+			
+			<div id="sidebar">
+				<ul>
+					<li class="Elem" ><a href="historie.html">HISTORIE</a></li>
+					<li class="Elem" ><a href="prosess.html">PROSESS</a></li>
+					<li class="Elem" ><a href="kurs.html">KURS</a></li>
+					<li><a href="bildergallery.html">GALLERI</a></li>
+				</ul>
+			</div>
 
-<tr>
-	<td>Hjem |</td>
-	<td>Slag |</td>
-	<td>Til inspirasjon |</td>
-	<td>Kontakt oss</td>
-</tr>
-<br>
+		<div class="img">
+		  <a target="_blank" >
+			<img src="img/slideshow/1.jpg" alt="1" width="180" height="180" onclick="op1('img/slideshow/1.jpg')">
+		  </a>  
+		</div>
+		<div class="img">
+		  <a target="_blank" >
+			<img src="img/slideshow/2.jpg" alt="2" width="180" height="180" onclick="op1('img/slideshow/2.jpg')">
+		  </a>
+		</div>
+		<div class="img">
+		  <a target="_blank" >
+			<img src="img/slideshow/3.jpg" alt="3" width="180" height="180" onclick="op1('img/slideshow/3.jpg')">
+		  </a>
+		</div>
+		<div class="img">
+		  <a target="_blank" >
+			<img src="img/slideshow/4.jpg" alt="4" width="180" height="180" onclick="op1('img/slideshow/4.jpg')">
+		  </a>
+		</div>
+		<div class="img">
+		  <a target="_blank">
+			<img src="img/slideshow/5.jpg" alt="5" width="180" height="180" onclick="op1('img/slideshow/5.jpg')">
+		   </a>
+		</div>
 
+		<div class="img">
+		  <a target="_blank">
+			<img src="img/slideshow/6.jpg" alt="7" width="180" height="180" onclick="op1('img/slideshow/6.jpg')">
+		   </a>
 
-<div class="img">
-  <a target="_blank" >
-    <img src="1.jpg" alt="bygg" width="250" height="200">
-  </a>
-  <div class="desc">Add a description of the image here</div>
-</div>
-<div class="img">
-  <a target="_blank" >
-    <img src="2.jpg" alt="bygg" width="250" height="200">
-  </a>
-  <div class="desc">Add a description of the image here</div>
-</div>
-<div class="img">
-  <a target="_blank" >
-    <img src="3.jpg" alt="bygg" width="250" height="200">
-  </a>
-  <div class="desc">Add a description of the image here</div>
-</div>
-<div class="img">
-  <a target="_blank" >
-    <img src="4.jpg" alt="4" width="250" height="200">
-  </a>
-  <div class="desc">Add a description of the image here</div>
-</div>
-<div class="img">
-  <a target="_blank">
-    <img src="5.jpg" alt="5" width="250" height="200">
-   </a>
-   <div class="desc">Add a description of the image here</div>
-</div>
+		</div>
+		<div class="img">
+		  <a target="_blank">
+			<img src="img/slideshow/7.jpg" alt="7" width="180" height="180" onclick="op1('img/slideshow/7.jpg')">
+		   </a>
+		</div>
 
-<div class="img">
-  <a target="_blank">
-    <img src="5.jpg" alt="5" width="250" height="200">
-   </a>
-   <div class="desc">Add a description of the image here</div>
-</div>
-<div class="img">
-  <a target="_blank">
-    <img src="5.jpg" alt="5" width="250" height="200">
-   </a>
-   <div class="desc">Add a description of the image here</div>
-</div>
+		<div class="img">
+		  <a target="_blank">
+			<img src="img/slideshow/8.jpg" alt="8" width="180" height="180" onclick="op1('img/slideshow/8.jpg')">
+		   </a>
+		</div>
+		<div class="img">
+		  <a target="_blank" >
+			<img src="img/slideshow/9.jpg" alt="9" width="180" height="180" onclick="op1('img/slideshow/9.jpg')" >
+		  </a>  
+		</div>
+		<div class="img">
+		  <a target="_blank" >
+			<img src="img/slideshow/10.jpg" alt="10" width="180" height="180" onclick="op1('img/slideshow/10.jpg')">
+		  </a>  
+		</div>
+		<div class="img">
+		  <a target="_blank" >
+			<img src="img/slideshow/11.jpg" alt="11" width="180" height="180" onclick="op1('img/slideshow/11.jpg')">
+		  </a>  
+		</div>
+		<div class="img">
+		  <a target="_blank" >
+			<img src="img/slideshow/12.jpg" alt="12" width="180" height="180" onclick="op1('img/slideshow/12.jpg')">
+		  </a>  
+		</div>
+		<div class="img">
+		  <a target="_blank" >
+			<img src="img/slideshow/13.jpg" alt="13" width="180" height="180" onclick="op1('img/slideshow/13.jpg')">
+		  </a>  
+		</div>
+		<div class="img">
+		  <a target="_blank" >
+			<img src="img/slideshow/14.jpg" alt="14" width="180" height="180" onclick="op1('img/slideshow/14.jpg')">
+		  </a>  
+		</div>
+		<div class="img">
+		  <a target="_blank" >
+			<img src="img/slideshow/15.jpg" alt="15" width="180" height="180" onclick="op1('img/slideshow/15.jpg')">
+		  </a>  
+		</div>
+		<div class="img">
+		  <a target="_blank" >
+			<img src="img/slideshow/16.jpg" alt="16" width="180" height="180" onclick="op1('img/slideshow/16.jpg')">
+		  </a>  
+		</div>
+		<div class="img">
+		  <a target="_blank" >
+			<img src="img/slideshow/17.jpg" alt="17" width="180" height="180" onclick="op1('img/slideshow/17.jpg')">
+		  </a>  
+		</div>
+		<div class="img">
+		  <a target="_blank" >
+			<img src="img/slideshow/18.jpg" alt="18" width="180" height="180" onclick="op1('img/slideshow/18.jpg')">
+		  </a>  
+		</div>
+		<div class="img">
+		  <a target="_blank" >
+			<img src="img/slideshow/19.jpg" alt="19" width="180" height="180" onclick="op1('img/slideshow/19.jpg')">
+		  </a>  
+		</div>
+		<div class="img">
+		  <a target="_blank" >
+			<img src="img/slideshow/20.jpg" alt="20" width="180" height="180" onclick="op1('img/slideshow/20.jpg')">
+		  </a>  
+		</div>
+		<div class="img">
+		  <a target="_blank" >
+			<img src="img/slideshow/21.jpg" alt="21" width="180" height="180" onclick="op1('img/slideshow/21.jpg')">
+		  </a>  
+		</div>
+		
+		<footer>
+				<b>Jan Einar Thorsen</b> ~ name@mail.no ~ 11223344
+		</footer>
+	</div>
 
-<div class="img">
-  <a target="_blank">
-    <img src="5.jpg" alt="5" width="250" height="200">
-   </a>
-   <div class="desc">Add a description of the image here</div>
-</div>
+	<script src="nav.js"></script>
+	<script>
+	function op1(pic){
 
-<div id ="footer">
-?-all rights reserved- Thorsens Grindbygg,adresse,mail
-</div>
-
+		window.open(pic,"_blank", "toolbar=yes, scrollbars=yes, resizable=yes, top='(window.screen.height - 600) / 2 + ', left='+ (window.screen.width - 800) / 2 +', width=700, height=850"
+		);
+		
+		}
+	</script>
 
 </body>
 </html>
