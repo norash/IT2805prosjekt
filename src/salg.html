@@ -21,16 +21,16 @@ PURPOSE:  Give customers the sales related information required.
 			</header>
 				
 			<div id="nav">
-				<a href="home.html"><div class="btn" id="hjemBtn">HJEM</div></a>
-				<a href="salg.html"><div class="btn" id="salgBtn" onmouseover="showMenu('salgMenu')" onmouseout="hideMenu('salgMenu')">SALG</div></a>
-				<div id="salgMenu" style="display: none" onmouseover="showMenu('salgMenu')" onmouseout="hideMenu('salgMenu')">
+				<a href="home.html"><div class="btn" id="hjemBtn" onmouseover="style.backgroundColor = '#B98D79'" onmouseout="style.backgroundColor = '#C9A798'">HJEM</div></a>
+				<a href="salg.html"><div class="btn" id="salgBtn" onmouseover="showSalg()" onmouseout="hideSalg()">SALG</div></a>
+				<div id="salgMenu" style="display: none" onmouseover="showSalg()" onmouseout="hideSalg()">
 					<ul>
 						<li><a href="salg.html">Salg</a></li>
 						<li><a href="lovverk.html">Lovverk</a></li>
 					</ul>
 				</div>
-				<a href="historie.html"><div class="btn" id="inspirasjonBtn" onmouseover="showMenu('inspirasjonMenu')" onmouseout="hideMenu('inspirasjonMenu')">INSPIRASJON</div></a>
-				<div id="inspirasjonMenu" style="display: none" onmouseover="showMenu('inspirasjonMenu')" onmouseout="hideMenu('inspirasjonMenu')">
+				<a href="historie.html"><div class="btn" id="inspirasjonBtn" onmouseover="showInspirasjon()" onmouseout="hideInspirasjon()">INSPIRASJON</div></a>
+				<div id="inspirasjonMenu" style="display: none" onmouseover="showInspirasjon()" onmouseout="hideInspirasjon()">
 					<ul>
 						<li><a href="historie.html">Historie</a></li>
 						<li><a href="prosess.html">Prosess</a></li>
@@ -38,13 +38,13 @@ PURPOSE:  Give customers the sales related information required.
 						<li><a href="bildergallery.html">Bildegalleri</a></li>
 					</ul>
 				</div>
-				<a href="kontakt.html"><div class="btn" id="kontaktBtn">KONTAKT OSS</div></a>
+				<a href="kontakt.html"><div class="btn" id="kontaktBtn" onmouseover="style.backgroundColor = '#B98D79'" onmouseout="style.backgroundColor = '#C9A798'">KONTAKT OSS</div></a>
 			</div>
 				
 			<div id="sidebar">
 				<ul>
-					<li class="Elem" ><a href="salg.html">SALG</a></li>
-					<li><a href="lovverk.html">LOVVERK</a></li>
+					<li class="Elem" onmouseover="style.backgroundColor = '#B98D79'" onmouseout="style.backgroundColor = '#C9A798'"><a href="salg.html">SALG</a></li>
+					<li onmouseover="style.backgroundColor = '#B98D79'" onmouseout="style.backgroundColor = '#C9A798'"><a href="lovverk.html">LOVVERK</a></li>
 				</ul>
 			</div>
 			

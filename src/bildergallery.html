@@ -18,17 +18,17 @@ PURPOSE:
 		<header><img id="logo" src="img/logo.gif"><h1>Thorsens grindbygg</h1>
 		</header>
 			
-			<div id="nav">
-				<a href="home.html"><div class="btn" id="hjemBtn">HJEM</div></a>
-				<a href="salg.html"><div class="btn" id="salgBtn" onmouseover="showMenu('salgMenu')" onmouseout="hideMenu('salgMenu')">SALG</div></a>
-				<div id="salgMenu" style="display: none" onmouseover="showMenu('salgMenu')" onmouseout="hideMenu('salgMenu')">
+		<div id="nav">
+				<a href="home.html"><div class="btn" id="hjemBtn" onmouseover="style.backgroundColor = '#B98D79'" onmouseout="style.backgroundColor = '#C9A798'">HJEM</div></a>
+				<a href="salg.html"><div class="btn" id="salgBtn" onmouseover="showSalg()" onmouseout="hideSalg()">SALG</div></a>
+				<div id="salgMenu" style="display: none" onmouseover="showSalg()" onmouseout="hideSalg()">
 					<ul>
 						<li><a href="salg.html">Salg</a></li>
 						<li><a href="lovverk.html">Lovverk</a></li>
 					</ul>
 				</div>
-				<a href="historie.html"><div class="btn" id="inspirasjonBtn" onmouseover="showMenu('inspirasjonMenu')" onmouseout="hideMenu('inspirasjonMenu')">INSPIRASJON</div></a>
-				<div id="inspirasjonMenu" style="display: none" onmouseover="showMenu('inspirasjonMenu')" onmouseout="hideMenu('inspirasjonMenu')">
+				<a href="historie.html"><div class="btn" id="inspirasjonBtn" onmouseover="showInspirasjon()" onmouseout="hideInspirasjon()">INSPIRASJON</div></a>
+				<div id="inspirasjonMenu" style="display: none" onmouseover="showInspirasjon()" onmouseout="hideInspirasjon()">
 					<ul>
 						<li><a href="historie.html">Historie</a></li>
 						<li><a href="prosess.html">Prosess</a></li>
@@ -36,15 +36,15 @@ PURPOSE:
 						<li><a href="bildergallery.html">Bildegalleri</a></li>
 					</ul>
 				</div>
-				<a href="kontakt.html"><div class="btn" id="kontaktBtn">KONTAKT OSS</div></a>
+				<a href="kontakt.html"><div class="btn" id="kontaktBtn" onmouseover="style.backgroundColor = '#B98D79'" onmouseout="style.backgroundColor = '#C9A798'">KONTAKT OSS</div></a>
 			</div>
 			
 			<div id="sidebar">
 				<ul>
-					<li class="Elem" ><a href="historie.html">HISTORIE</a></li>
-					<li class="Elem" ><a href="prosess.html">PROSESS</a></li>
-					<li class="Elem" ><a href="kurs.html">KURS</a></li>
-					<li><a href="bildergallery.html">GALLERI</a></li>
+					<li class="Elem" onmouseover="style.backgroundColor = '#B98D79'" onmouseout="style.backgroundColor = '#C9A798'"><a href="historie.html">HISTORIE</a></li>
+					<li class="Elem" onmouseover="style.backgroundColor = '#B98D79'" onmouseout="style.backgroundColor = '#C9A798'"><a href="prosess.html">PROSESS</a></li>
+					<li class="Elem" onmouseover="style.backgroundColor = '#B98D79'" onmouseout="style.backgroundColor = '#C9A798'"><a href="kurs.html">KURS</a></li>
+					<li onmouseover="style.backgroundColor = '#B98D79'" onmouseout="style.backgroundColor = '#C9A798'"><a href="bildergallery.html">GALLERI</a></li>
 				</ul>
 			</div>
 
