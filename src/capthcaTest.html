@@ -7,10 +7,14 @@ PURPOSE:  The purpose is to se if the "captcha.js" works as it should.
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Insert title here</title>
+	<meta charset="UTF-8">
+	<title>Insert title here</title>
 </head>
 <body>
-<button id ="knapp" type="button">Captcha</button>
+	<canvas id="captchan" width="600" height="200">   
+		Your browser does not support the &lt;canvas&gt; element.
+	</canvas>
+	<input type="number" id="inputPlass" name="checkInput"/>
+	<script type ="text/javascript" src="captcha.js"></script>
 </body>
 </html>
