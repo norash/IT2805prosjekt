@@ -49,8 +49,7 @@ PURPOSE: Contact us-form for potential customers to send us their requests and/o
 						</p>
 						
 						<div id="form">
-							<form name="kontaktOss" action="" method="post" enctype="text/plain"
-							onsubmit="validateEmail()">
+							<form name="kontaktOss" action="" method="post" enctype="text/plain">
 								<label for="navn">Navn:</label>
 								<input id="navnInput" type="text" name="navn" size="30">
 								<br>
@@ -68,10 +67,18 @@ PURPOSE: Contact us-form for potential customers to send us their requests and/o
 								<textarea id="foresporselInput" name="foresporsel" placeholder="Skriv kort hva du trenger hjelp til..." rows="8"></textarea>
 								<br>
 								</p>
-								<input id="send" type="submit" value="Send"/>						
+								<input id="send" type="submit" value="Send"/>
+								<input id="validate" type="submit" value="Valider"/>
+								<p id="warning"/>
 							</form>
 						</div>
-						<p id="warning"/>
+						<div id="validation">
+							<input type="text" id="inputPlass" name="checkInput"/>
+							<br>
+							<canvas id="captchan" width="360" height="120">
+								Your browser does not support the canvas element.
+							</canvas>
+						</div>
 					</div>
 					
 					<div id="rightKontakt">
@@ -93,12 +100,11 @@ PURPOSE: Contact us-form for potential customers to send us their requests and/o
 			</footer>
 		
 		</div>
-		<script src="nav.js"></script>
-		<script type= "text/javascript" src="valid.js"></script>
+		<script type= "text/javascript" src="nav.js"></script>
+		<script type= "text/javascript" src="valid&captcha.js"></script>
 		
 		<!-- Google kart lagt til ved hjelp av denne siden:
 		https://developers.google.com/maps/tutorials/fundamentals/adding-a-google-map-->
-
 		<script src="https://maps.googleapis.com/maps/api/js"></script>
 		<script type="text/javascript">
 			function initialize(){

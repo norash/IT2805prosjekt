@@ -297,10 +297,6 @@ nav li{
 	margin-right: 0;
  }
  
- #captchaButton{
-	 margin-left: 0;
- }
- 
  #postnr {
 	width: 90px;
 	margin-right: 0;
@@ -311,16 +307,18 @@ nav li{
 	margin-left: 0;
  }
  
- #send, #captchaButton {
+ #send, #validate {
 	width: 80px;
 	font-weight: bold;
  }
  
- #send:active, #captchaButton:active{
-	margin: 6px 0 10px 7.5px;
-	width: 75px;
-	padding: 3px;
-	font-size: 12px;
+ #validate {
+	 margin-left: 239px;
+ }
+ 
+ 
+ #send:active, #validate:active{
+	border: 3px solid #453823;
  }
 
  form > label, form > p {
@@ -358,16 +356,17 @@ nav li{
  }
  
  #kontaktOssSkjema {
-	 padding-bottom: 200px;
+	 padding-bottom: 220px;
 	 font-family: Century Gothic, Tahoma, sans-serif;
  }
  
- #validation{
-	 margin-left: 150px;
+ #captchan, #inputPlass, #validate{
+	 display: none;
  }
  
- #captchan, #inputPlass, #captchaButton{
-	 display: none;
+ #validation{
+	 position: absolute;
+	 margin: 0 0 0 150px;
  }
  
  /* Slutten på kontakt oss skjema */
