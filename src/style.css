@@ -281,7 +281,7 @@ nav li{
 /* Slutten på home page*/
 
 /* Kontakt oss skjema */
- form > input, form > textarea {
+ form > input, form > textarea, #inputPlass, #captchaButton {
 	border-radius: 10px;
 	border: 2px solid #453823;
 	background: transparent;
@@ -292,7 +292,15 @@ nav li{
 	font-size: 14px;
  }
  
-
+ #inputPlass{
+	width: 203px;
+	margin-right: 0;
+ }
+ 
+ #captchaButton{
+	 margin-left: 0;
+ }
+ 
  #postnr {
 	width: 90px;
 	margin-right: 0;
@@ -303,12 +311,12 @@ nav li{
 	margin-left: 0;
  }
  
- #send {
+ #send, #captchaButton {
 	width: 80px;
 	font-weight: bold;
  }
  
- #send:active {
+ #send:active, #captchaButton:active{
 	margin: 6px 0 10px 7.5px;
 	width: 75px;
 	padding: 3px;
@@ -326,7 +334,7 @@ nav li{
  
  #leftKontakt {
 	 display: inline-block;
-	 margin: 0 100px 20px 0;
+	 margin: 0 100px 50px 0;
 	 float: left;
  }
  
@@ -350,8 +358,16 @@ nav li{
  }
  
  #kontaktOssSkjema {
-	 padding-bottom: 75px;
+	 padding-bottom: 200px;
 	 font-family: Century Gothic, Tahoma, sans-serif;
+ }
+ 
+ #validation{
+	 margin-left: 150px;
+ }
+ 
+ #captchan, #inputPlass, #captchaButton{
+	 display: none;
  }
  
  /* Slutten på kontakt oss skjema */
@@ -409,3 +425,32 @@ select{
 	text-decoration: underline;
 }
 /* Slutt på salgsiden */
+
+/* Bildegalleri */
+div.img {
+    margin: 0px;
+    padding: 0px;
+    border: 0px solid #0000ff;
+    height: auto;
+    width: auto;
+    float: left;
+    text-align: center;
+}
+
+div.img img {
+    display: inline;
+    margin: 5px;
+    border: 1px solid #ffffff;
+}
+
+div.img a:hover img {
+    border:1px solid #0000ff;
+}
+
+div.desc {
+    text-align: center;
+    font-weight: normal;
+    width: 120px;
+    margin: 5px;
+}
+/* Slutt på bildegalleri */
