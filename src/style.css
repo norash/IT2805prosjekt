@@ -443,6 +443,7 @@ select{
     display: inline;
     margin: 10px;
     border: 2px solid #ffffff;
+	object-fit: cover;
 }
 
 .img a:hover img {
