@@ -71,7 +71,7 @@ html, body {
 }
 
 .btn:hover {
-	font-weight: bold;
+	font-weight: normal;
 }
 /*slutt navbar*/
  
@@ -151,6 +151,9 @@ h1{
 	list-style-type: none;
 	padding: 5px;
 }
+#sidebar li:hover{
+	background-color: #B98D79;
+}
 #sidebar a{
 	text-decoration: none;
 	color: black;
@@ -175,9 +178,6 @@ h1{
 #sidebar hr{
 	color: red;
 	margin: none;
-}
-#sidebar a:hover{
-	font-weight: bold;
 }
 /* slutt felles for alle sidene*/
 /* Navigasjon*/
