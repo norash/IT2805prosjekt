@@ -455,4 +455,11 @@ div.desc {
     width: 120px;
     margin: 5px;
 }
+
+#galleriBilder {
+	margin-left: 140px;
+	padding-top: 50px;
+	height: 1200px;
+}
+
 /* Slutt på bildegalleri */
