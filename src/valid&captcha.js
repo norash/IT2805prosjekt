@@ -5,6 +5,11 @@ WHEN: November 2015
 PURPOSE: JavaScript for form validation and captcha
 */
 
+window.onload = function(){
+	document.getElementById("validation").style.display = "none";
+	document.getElementById("validate").style.display = "none";
+}
+
 // Form validation
 var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 var numberformat = /^[0-9,]+$/;
@@ -91,7 +96,6 @@ var tredjeBilde = bilde3[0];
 var z = bilde3[1];
 
 var gyldigSum = x+y+z;
-console.log(gyldigSum);
 
 
 forsteBilde.onload = function() {
@@ -118,7 +122,7 @@ document.getElementById("send").addEventListener('click',function(event){
 		document.getElementById("navnInput").style.borderColor = "red";
 		event.preventDefault();
 	}else if(tlfInput.value.length===0 && epostInput.value.length===0){
-		document.getElementById("warning").innerHTML = "Vennligst oppgi enten e-postadresse eller telefonnummer <br> så vi kan svare deg.";
+		document.getElementById("warning").innerHTML = "Vennligst oppgi enten e-postadresse eller <br>telefonnummer så vi kan svare deg.";
 		document.getElementById("tlfInput").style.borderColor = "red";
 		document.getElementById("epostInput").style.borderColor = "red";
 		event.preventDefault();
@@ -135,14 +139,14 @@ document.getElementById("send").addEventListener('click',function(event){
 		document.getElementById("postnr").style.borderColor = "red";
 		event.preventDefault();
 	}else if(foresporselInput.value==''){
-		document.getElementById("warning").innerHTML = "Vennligst skriv hva vi kan hjelpe deg med i forespørsel-feltet.";
+		document.getElementById("warning").innerHTML = "Vennligst skriv hva vi kan hjelpe deg med <br>i forespørsel-feltet.";
 		document.getElementById("foresporselInput").style.borderColor = "red";
 		event.preventDefault();
 	}else{
 		// Captcha
-		document.getElementById("captchan").style.display = "inline";
-		document.getElementById("inputPlass").style.display = "inline";
-		document.getElementById("validate").style.display = "inline";
+		document.getElementById("warning").innerHTML = "";
+		document.getElementById("validation").style.display = "initial";
+		document.getElementById("validate").style.display = "initial";
 		document.getElementById("send").style.display = "none";
 		event.preventDefault();
 	}
@@ -156,6 +160,7 @@ document.getElementById("validate").addEventListener('click',function(event){
 		event.preventDefault();
 		
 		document.getElementById("inputPlass").value = "";
+		document.getElementById("inputPlass").placeholder = "Prøv igjen.";
 		
 		bilde1 = randomPick();
 		forsteBilde = bilde1[0];
