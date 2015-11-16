@@ -280,6 +280,14 @@ nav li{
 /* Slutten på home page*/
 
 /* Kontakt oss skjema */
+#kontaktSection {
+ 	padding: 50px;
+ 	padding-bottom: 20px;
+ 	width: 100%;
+	margin-left: 0;
+	margin-right: auto;
+ }
+ 
  form > input, form > textarea, #inputPlass, #captchaButton {
 	border-radius: 10px;
 	border: 2px solid #453823;
