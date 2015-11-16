@@ -43,10 +43,6 @@ function showPrev(){
 }
 
 
-
-
-
-
 window.addEventListener("load", function(){
 	setListener();
 });

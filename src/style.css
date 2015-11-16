@@ -472,7 +472,7 @@ select{
 	padding-bottom: 152px;
 }
 #slideWindow img{
-	
+	width: 600px;
 }
 #slideWindow{
 	display: inherit;
