@@ -94,7 +94,7 @@ section {
 	margin-right: auto;
  }
  
-img {
+#galleriBilder img {
 	width: 300px;
 	border: 1px solid  #453823;
 	float: right;
@@ -266,8 +266,8 @@ nav li{
 	background-border-top: solid black 5px;
 	z-index: 0;
 	opacity: 0.8;
-
 }
+
 #slideshowForeground{
 	position: absolute;
 	margin-top: 6%;
@@ -471,16 +471,22 @@ select{
 #homeContent {
 	padding-bottom: 152px;
 }
+
 #slideWindow img{
-	width: 600px;
+	max-width: 100%;
+	object-fit: scale-down;
 }
+
 #slideWindow{
 	display: inherit;
 	background-color: white;
+	max-height: 100%;
+	max-width: 670px;
 	padding: 10px;
-	position: fixed;
-	top: 30%;
-	left: 30%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: auto;
+	margin-top: 30px;
 	border-radius: 10px;
 }
 #overlay{ 
