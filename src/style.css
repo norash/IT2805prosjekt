@@ -38,12 +38,12 @@ html, body {
 
 #salgMenu {
 	height: 50px;
-	left: 50%;
+	left: 25%;
 }
 
 #inspirasjonMenu {
 	height: 100px;
-	left: 25%;
+	left: 50%;
 }
 
 #salgMenu ul, #inspirasjonMenu ul {
