@@ -82,7 +82,7 @@ html, body {
  	
 	background-color: #E9E0DB;
  }
-p {
+p, blockquote {
  	font-family: Century Gothic, Tahoma, sans-serif;
 }
  

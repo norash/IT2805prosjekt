@@ -1,11 +1,10 @@
+<!DOCTYPE html>
 <!--
 FILE NAME: kontakt.html
 WRITTEN BY: Jonas Thorsen
 WHEN: November 2015
 PURPOSE: Contact us-form for potential customers to send us their requests and/or questions
 -->
-
-<!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="UTF-8">
@@ -16,7 +15,7 @@ PURPOSE: Contact us-form for potential customers to send us their requests and/o
 	<body>	
 		<div id="container">
 			<header>
-				<a href="home.html"><img id="logo" src="img/logo.gif"></a>
+				<a href="home.html"><img id="logo" src="img/logo.gif" alt="Logo"></a>
 				<h1>Thorsens grindbygg</h1>
 			</header>
 			
@@ -63,19 +62,18 @@ PURPOSE: Contact us-form for potential customers to send us their requests and/o
 								<label for="epost">E-postadresse</label>
 								<input id="epostInput" type="text" name="epost" size="30">
 								<br>
-								<label for="postnr" for="gate">Adresse</label>
+								<label for="postnr">Adresse</label>
 								<input id="postnr" type="text" name="postnr" placeholder="Postnummer" size="9">
 								<input id="gate" type="text" name="gate" placeholder="Gateadresse" size="20">
 								<br>
 								<label id="foresporsel" for="foresporsel">Forespørsel*</label>
 								<textarea id="foresporselInput" name="foresporsel" placeholder="Skriv kort hva du trenger hjelp til..." rows="8"></textarea>
 								<br>
-								</p>
 								<input id="send" type="submit" value="Send"/>
 								<input id="validate" type="submit" value="Valider"/>
 							</form>
 						</div>
-						<p id="warning"/>
+						<p id="warning"></p>
 						<div id="validation">
 							<input type="text" id="inputPlass" name="checkInput" placeholder="Skriv inn tallene du ser under"/>
 							<br>
@@ -91,7 +89,6 @@ PURPOSE: Contact us-form for potential customers to send us their requests and/o
 							<li>Høgskoleringen 1</li>
 							<li>7491 Trondheim</li>
 							<li>Norge</li>
-							<br>
 							<li>11223344</li>
 							<li>name@mail.no</li>
 						</ul>
@@ -105,7 +102,8 @@ PURPOSE: Contact us-form for potential customers to send us their requests and/o
 		
 		</div>
 		<script type= "text/javascript" src="js/nav.js"></script>
-		<script type= "text/javascript" src="js/valid&captcha.js"></script>
+		<script type= "text/javascript" src="js/valid&amp;captcha.js"></script>
+
 		
 		<!-- Google kart lagt til ved hjelp av denne siden:
 		https://developers.google.com/maps/tutorials/fundamentals/adding-a-google-map-->
