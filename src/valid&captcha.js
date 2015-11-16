@@ -1,16 +1,16 @@
 /*
-FILE NAME: valid.js
+FILE NAME: valid&captcha.js
 WRITTEN BY: Jonas Thorsen og Mats Sæter
 WHEN: November 2015
 PURPOSE: JavaScript for form validation and captcha
 */
 
+// Form validation
 window.onload = function(){
 	document.getElementById("validation").style.display = "none";
 	document.getElementById("validate").style.display = "none";
 }
 
-// Form validation
 var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 var numberformat = /^[0-9,]+$/;
 
