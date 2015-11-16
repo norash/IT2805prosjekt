@@ -126,12 +126,8 @@ footer {
 header h1{
 	display: inline;
 	margin: 0px;
-<<<<<<< HEAD
-	font-family: chalkduster, lucida calligraphy, georgia, serif;
+	font-family: lucida calligraphy, georgia, serif;
 	text-shadow: 0px 0px 2px black;
-=======
-	font-family: Century Gothic, Tahoma, sans-serif;
->>>>>>> origin/master
 	color: #E9E0DB;
 	padding: 50px;
 	font-size: 64px;
