@@ -185,5 +185,7 @@ document.getElementById("validate").addEventListener('click',function(event){
 		tredjeBilde.onload = function() {
 			ctx.drawImage(tredjeBilde, 240, 0, 120, 120);
 		};
-	};
+	}else{
+		alert("Takk for din hendvendelse!");
+	}
 });
